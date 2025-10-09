@@ -11,105 +11,105 @@ export default function BestSeller() {
   const Products = [
     {
       id:1,
-      image: "/public/img/pr1.jpg",
+      image: "/img/pr1.jpg",
       name: "Apple",
       price: "$14.99",
       priceSell: "$20.99",
-      cart: "/public/img/Bag2.svg",
-      rate: "/public/img/Star.svg",
+      cart: "/img/Bag2.svg",
+      rate: "/img/Star.svg",
     },
     {
       id:2,
-      image: "/public/img/pr2.jpg",
+      image: "/img/pr2.jpg",
       name: "Fresh Indian Malta",
       price: "$20.00",
       priceSell: "",
-      cart: "/public/img/Bag2.svg",
-      rate: "/public/img/Star.svg",
+      cart: "/img/Bag2.svg",
+      rate: "/img/Star.svg",
     },
     {
       id:3,
-      image: "/public/img/pr3.jpg",
+      image: "/img/pr3.jpg",
       name: "Chinese cabbage",
       price: "$12.00",
       priceSell: "",
-      cart: "/public/img/Bag2.svg",
-      rate: "/public/img/Star.svg",
+      cart: "/img/Bag2.svg",
+      rate: "/img/Star.svg",
     },
     {
       id:4,
-      image: "/public/img/pr4.jpg",
+      image: "/img/pr4.jpg",
       name: "Green Lettuce",
       price: "$9.00",
       priceSell: "",
-      cart: "/public/img/Bag2.svg",
-      rate: "/public/img/Star.svg",
+      cart: "/img/Bag2.svg",
+      rate: "/img/Star.svg",
     },
     {
       id:5,
-      image: "/public/img/pr5.jpg",
+      image: "/img/pr5.jpg",
       name: "Eggplant",
       price: "$34.00",
       priceSell: "",
-      cart: "/public/img/Bag2.svg",
-      rate: "/public/img/Star.svg",
+      cart: "/img/Bag2.svg",
+      rate: "/img/Star.svg",
     },
   ];
 
   const ProductSells = [
     {
-      img: "/public/img/s1.jpg",
+      img: "/img/s1.jpg",
       name: "Green Apple",
       price: "$14.99",
-      rate: "/public/img/Star.svg",
+      rate: "/img/Star.svg",
     },
     {
-      img: "/public/img/s2.jpg",
+      img: "/img/s2.jpg",
       name: "Indian Malta",
       price: "$14.99",
-      rate: "/public/img/Star.svg",
+      rate: "/img/Star.svg",
     },
     {
-      img: "/public/img/s3.jpg",
+      img: "/img/s3.jpg",
       name: "Green Lettuce",
       price: "$14.99",
-      rate: "/public/img/Star.svg",
+      rate: "/img/Star.svg",
     },
     {
-      img: "/public/img/s4.jpg",
+      img: "/img/s4.jpg",
       name: "Eggplant",
       price: "$14.99",
-      rate: "/public/img/Star.svg",
+      rate: "/img/Star.svg",
     },
     {
-      img: "/public/img/s5.jpg",
+      img: "/img/s5.jpg",
       name: "Red Capsicum",
       price: "$14.99",
-      rate: "/public/img/Star.svg",
+      rate: "/img/Star.svg",
     },
     {
-      img: "/public/img/s6.jpg",
+      img: "/img/s6.jpg",
       name: "Red Tomatos",
       price: "$14.99",
-      rate: "/public/img/Star.svg",
+      rate: "/img/Star.svg",
     },
     {
-      img: "/public/img/s7.jpg",
+      img: "/img/s7.jpg",
       name: "Big Potatos",
       price: "$14.99",
-      rate: "/public/img/Star.svg",
+      rate: "/img/Star.svg",
     },
     {
-      img: "/public/img/s8.jpg",
+      img: "/img/s8.jpg",
       name: "Corn",
       price: "$14.99",
-      rate: "/public/img/Star.svg",
+      rate: "/img/Star.svg",
     },
     {
-      img: "/public/img/s9.jpg",
+      img: "/img/s9.jpg",
       name: "Fresh cauliflower",
       price: "$14.99",
-      rate: "/public/img/Star.svg",
+      rate: "/img/Star.svg",
     },
   ];
 
@@ -204,7 +204,7 @@ export default function BestSeller() {
                           <div className="border rounded-full border-black p-[10px] hover:bg-[#00B207]">
                             <img
                               className=" w-5 h-5 flex center"
-                              src="/public/img/Bag2.svg"
+                              src="/img/Bag2.svg"
                               alt=""
                             />
                           </div>
@@ -216,7 +216,7 @@ export default function BestSeller() {
                           >
                             <img
                               className="w-5 h-5"
-                              src="/public/img/eye.svg"
+                              src="/img/eye.svg"
                               alt=""
                             />
                           </div>
@@ -228,7 +228,7 @@ export default function BestSeller() {
               ))}
             </div>
           </div>
-          <img className="" src="/public/img/ps.jpg" alt="" />
+          <img className="" src="/img/ps.jpg" alt="" />
         </div>
         {open && dataPr && (
           <div className="fixed inset-0 flex items-center justify-center z-100 backdrop-brightness-50">
@@ -245,32 +245,32 @@ export default function BestSeller() {
               <div className="">
                 <div className="flex gap-6">
                   <div className="flex flex-col items-center gap-14">
-                    <img className="w-6 h-6" src="/public/img/up.svg" alt="" />
+                    <img className="w-6 h-6" src="/img/up.svg" alt="" />
                     <div className="">
                       <img
                         className=""
-                        src="/public/img/Productmini.jpg"
+                        src="/img/Productmini.jpg"
                         alt=""
                       />
                       <img
                         className=""
-                        src="/public/img/Productmini2.jpg"
+                        src="/img/Productmini2.jpg"
                         alt=""
                       />
                       <img
                         className=""
-                        src="/public/img/Productmini2.jpg"
+                        src="/img/Productmini2.jpg"
                         alt=""
                       />
                       <img
                         className=""
-                        src="/public/img/Productmini2.jpg"
+                        src="/img/Productmini2.jpg"
                         alt=""
                       />
                     </div>
                     <img
                       className="w-6 h-6"
-                      src="/public/img/down.svg"
+                      src="/img/down.svg"
                       alt=""
                     />
                   </div>
@@ -331,7 +331,7 @@ export default function BestSeller() {
                         <p className="text-[14px]">Brand:</p>
                         <img
                           className="w-[56px] h-[56px]"
-                          src="/public/img/image.png"
+                          src="/img/image.png"
                           alt=""
                         />
                       </div>
@@ -340,22 +340,22 @@ export default function BestSeller() {
                         <div className="flex gap-6">
                           <img
                             className="w-[18px] h-[18px]"
-                            src="/public/img/fb.svg"
+                            src="/img/fb.svg"
                             alt=""
                           />
                           <img
                             className="w-[18px] h-[18px]"
-                            src="/public/img/tw.svg"
+                            src="/img/tw.svg"
                             alt=""
                           />
                           <img
                             className="w-[18px] h-[18px]"
-                            src="/public/img/pin.svg"
+                            src="/img/pin.svg"
                             alt=""
                           />
                           <img
                             className="w-[18px] h-[18px]"
-                            src="/public/img/ig.svg"
+                            src="/img/ig.svg"
                             alt=""
                           />
                         </div>
@@ -375,7 +375,7 @@ export default function BestSeller() {
                         <div className="bg-[#F2F2F2] rounded-full p-[10px] flex items-center justify-center " onClick={increase}>
                           <img
                             className="w-[14px] h-[14px]"
-                            src="/public/img/add.svg"
+                            src="/img/add.svg"
                             alt=""
                           />
                         </div>
@@ -383,7 +383,7 @@ export default function BestSeller() {
                         <div className="bg-[#F2F2F2] rounded-full p-[10px] flex items-center justify-center "onClick={decrease}>
                           <img
                             className="w-[14px] h-[14px]"
-                            src="/public/img/del.svg"
+                            src="/img/del.svg"
                             alt=""
                           />
                         </div>

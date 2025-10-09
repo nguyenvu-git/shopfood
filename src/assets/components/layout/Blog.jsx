@@ -3,9 +3,9 @@ import SingleBlock from "./SingleBlock";
 import { useNavigate } from "react-router-dom";
 export default function Blog(){
     const Blogs =[
-        {image:"/public/img/b1.jpg",day:"18",month:"NOV",},
-        {image:"/public/img/b2.jpg",day:"23",month:"JAN",},
-        {image:"/public/img/b3.jpg",day:"18",month:"NOV",}
+        {image:"/img/b1.jpg",day:"18",month:"NOV",},
+        {image:"/img/b2.jpg",day:"23",month:"JAN",},
+        {image:"/img/b3.jpg",day:"18",month:"NOV",}
     ]
     // const[openBlock,setOpenBlock]=useState(false);
     // const handleOpenBlock =()=>{

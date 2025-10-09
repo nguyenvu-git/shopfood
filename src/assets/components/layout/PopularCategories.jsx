@@ -1,17 +1,17 @@
 export default function PopularCategories() {
   const Items = [
-    { image: "/public/img/p1.jpg", text: "Fresh Fruit" },
-    { image: "/public/img/p2.jpg", text: "Fresh Vegetables" },
-    { image: "/public/img/p3.jpg", text: "Meat & Fish" },
-    { image: "/public/img/p4.jpg", text: "Snacks" },
-    { image: "/public/img/p5.jpg", text: "Beverages" },
-    { image: "/public/img/p7.jpg", text: "Beauty & Health" },
-    { image: "/public/img/p6.jpg", text: "Bread & Bakery" },
-    { image: "/public/img/p8.jpg", text: "Baking Needs" },
-    { image: "/public/img/p9.jpg", text: "Cooking" },
-    { image: "/public/img/p10.jpg", text: "Diabetic Food" },
-    { image: "/public/img/p10.jpg", text: "Diabetic Food" },
-    { image: "/public/img/p10.jpg", text: "Diabetic Food" },
+    { image: "/img/p1.jpg", text: "Fresh Fruit" },
+    { image: "/img/p2.jpg", text: "Fresh Vegetables" },
+    { image: "/img/p3.jpg", text: "Meat & Fish" },
+    { image: "/img/p4.jpg", text: "Snacks" },
+    { image: "/img/p5.jpg", text: "Beverages" },
+    { image: "/img/p7.jpg", text: "Beauty & Health" },
+    { image: "/img/p6.jpg", text: "Bread & Bakery" },
+    { image: "/img/p8.jpg", text: "Baking Needs" },
+    { image: "/img/p9.jpg", text: "Cooking" },
+    { image: "/img/p10.jpg", text: "Diabetic Food" },
+    { image: "/img/p10.jpg", text: "Diabetic Food" },
+    { image: "/img/p10.jpg", text: "Diabetic Food" },
   ];
   return (
     <>

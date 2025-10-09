@@ -7,12 +7,12 @@ export default function SingleBlock() {
       <Header></Header>
       <div className="w-[1320px] mx-auto flex gap-[48px] mt-40">
         <div className="w-[872px]">
-          <img src="\public\img\blog1.jpg" alt="" />
+          <img src="\img\blog1.jpg" alt="" />
           <div className="flex gap-4 pt-8">
             <div className="flex gap-1 items-center">
               <img
                 className="w-[20px] h-[20px]"
-                src="\public\img\tag.svg"
+                src="\img\tag.svg"
                 alt=""
               />
               <p className="text-[#4D4D4D]">Food</p>
@@ -20,7 +20,7 @@ export default function SingleBlock() {
             <div className="flex gap-1 items-center">
               <img
                 className="w-[20px] h-[20px]"
-                src="\public\img\user1.svg"
+                src="\img\user1.svg"
                 alt=""
               />
               <p className="text-[#4D4D4D]">By Admin</p>
@@ -28,7 +28,7 @@ export default function SingleBlock() {
             <div className="flex gap-1 items-center">
               <img
                 className="w-[20px] h-[20px]"
-                src="\public\img\chat.svg"
+                src="\img\chat.svg"
                 alt=""
               />
               <p className="text-[#4D4D4D]">65 Comments</p>
@@ -41,7 +41,7 @@ export default function SingleBlock() {
           <div className="flex gap-3 mt-8 items-center">
             <img
               className="w-[50px] h-[50px]"
-              src="\public\img\avt2.jpg"
+              src="\img\avt2.jpg"
               alt=""
             />
             <div className="">
@@ -72,8 +72,8 @@ export default function SingleBlock() {
             Nunc sit amet erat quis ex convallis suscipit. ur ridiculus mus.
           </p>
           <div className="flex gap-6">
-            <img src="\public\img\blog2.jpg" alt="" />
-            <img src="\public\img\blog3.jpg" alt="" />
+            <img src="\img\blog2.jpg" alt="" />
+            <img src="\img\blog3.jpg" alt="" />
           </div>
           <p className="text-[18px] text-[#808080] mt-6">
             Sed dictum non nulla eu imperdiet. Duis elit libero, vulputate quis

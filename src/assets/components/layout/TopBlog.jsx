@@ -47,31 +47,31 @@ export default function TopBlock(){
           <div className="">
             <p className="text-[20px] font-medium mt-5 ">Recently Added</p>
             <div className="flex gap-3 mt-4 cursor-pointer">
-              <img src="\public\img\blog4.jpg" alt="" />
+              <img src="\img\blog4.jpg" alt="" />
               <div className="">
                 <p className="font-medium">Curabitur porttitor orci eget nequ accumsan.</p>
                 <div className="flex gap-[6px] mt-2">
-                  <img src="\public\img\calendar.svg" alt="" />
+                  <img src="\img\calendar.svg" alt="" />
                   <p className="text-[#666] text-[14px]">Apr 25, 2021</p>
                 </div>
               </div>
             </div>
             <div className="flex gap-3 mt-5 cursor-pointer">
-              <img src="\public\img\blog5.jpg" alt="" />
+              <img src="\img\blog5.jpg" alt="" />
               <div className="">
                 <p className="font-medium">Curabitur porttitor orci eget nequ accumsan.</p>
                 <div className="flex gap-[6px] mt-2">
-                  <img src="\public\img\calendar.svg" alt="" />
+                  <img src="\img\calendar.svg" alt="" />
                   <p className="text-[#666] text-[14px]">Apr 25, 2021</p>
                 </div>
               </div>
             </div>
             <div className="flex gap-3 mt-5 cursor-pointer">
-              <img src="\public\img\blog6.jpg" alt="" />
+              <img src="\img\blog6.jpg" alt="" />
               <div className="">
                 <p className="font-medium">Curabitur porttitor orci eget nequ accumsan.</p>
                 <div className="flex gap-[6px] mt-2">
-                  <img src="\public\img\calendar.svg" alt="" />
+                  <img src="\img\calendar.svg" alt="" />
                   <p className="text-[#666] text-[14px]">Apr 25, 2021</p>
                 </div>
               </div>

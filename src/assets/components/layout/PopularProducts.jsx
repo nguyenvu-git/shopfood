@@ -25,7 +25,7 @@ export default function PopularProducts() {
           </p>
           <div className="flex gap-3 justify-center items-center cursor-pointer">
             <p className="text-[#00B207] font-medium">View All</p>
-            <img className="w-[15px]" src="\public\img\Group.svg" alt="" />
+            <img className="w-[15px]" src="\img\Group.svg" alt="" />
           </div>
         </div>
         <div className="flex flex-wrap justify-center items-center py-8 gap-3 sm:gap-0">
@@ -64,7 +64,7 @@ export default function PopularProducts() {
                       />
                       <img
                         className="hidden group-hover:block"
-                        src="\public\img\Bagw.svg"
+                        src="\img\Bagw.svg"
                         alt=""
                       />
                     </div>
