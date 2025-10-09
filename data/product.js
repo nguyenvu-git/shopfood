@@ -1,7 +1,7 @@
 export const Products = [
     {
       id: 1,
-      image: "/public/img/pr1.jpg",
+      image: "/img/pr1.jpg",
       name: "Apple",
       price: "$14.99",
       priceSell: "$20.99",
