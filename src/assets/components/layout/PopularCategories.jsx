@@ -18,7 +18,7 @@ export default function PopularCategories() {
       <div className="w-[400px] sm:w-[1320px] mx-auto mt-[60px]">
         <div className="flex items-center justify-between">
           <p className="text-2xl sm:text-[32px] font-semibold">
-            Popular Categories
+            Popular Categories đang fix vercel
           </p>
           <div className="flex gap-3 justify-center items-center cursor-pointer">
             <p className="text-[#00B207] font-medium">View All</p>
@@ -40,14 +40,16 @@ export default function PopularCategories() {
                 src={item.image}
                 alt=""
               />
-              <p className="mt-4 mb-6 font-medium sm:text-[18px] text-[12px]">{item.text}</p>
+              <p className="mt-4 mb-6 font-medium sm:text-[18px] text-[12px]">
+                {item.text}
+              </p>
             </div>
           ))}
         </div>
 
-          {/* mobile */}
+        {/* mobile */}
         <div className="sm:hidden flex flex-wrap gap-2.5 items-center justify-center mt-8 select-none">
-          {Items.slice(0,6).map((item, index) => (
+          {Items.slice(0, 6).map((item, index) => (
             <div
               className="flex flex-col rounded-sm border-1 cursor-pointer border-[#E6E6E6] items-center justify-center hover:border-[#2C742F] hover:text-[#2C742F]"
               key={index}
@@ -57,7 +59,9 @@ export default function PopularCategories() {
                 src={item.image}
                 alt=""
               />
-              <p className="mt-4 mb-6 font-medium sm:text-[18px] text-[12px]">{item.text}</p>
+              <p className="mt-4 mb-6 font-medium sm:text-[18px] text-[12px]">
+                {item.text}
+              </p>
             </div>
           ))}
         </div>
