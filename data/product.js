@@ -5,8 +5,8 @@ export const Products = [
       name: "Apple",
       price: "$14.99",
       priceSell: "$20.99",
-      cart: "/public/img/Bag2.svg",
-      rate: "/public/img/Star.svg",
+      cart: "/img/Bag2.svg",
+      rate: "/img/Star.svg",
     },
     {
       id: 2,
