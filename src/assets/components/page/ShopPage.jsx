@@ -114,7 +114,7 @@ export default function ShopPage() {
                     />
                     <img
                       className="hidden group-hover:block"
-                      src="\public\img\Bagw.svg"
+                      src="\img\Bagw.svg"
                       alt=""
                     />
                   </div>

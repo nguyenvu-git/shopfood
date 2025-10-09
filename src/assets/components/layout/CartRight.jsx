@@ -29,7 +29,7 @@ export default function CartRight({onClose}) {
                               </div>
       
                           </div>
-                          <img onClick={()=>dispatch(removeFromCart(product.id))} className="cursor-pointer w-6 h-6" src="\public\img\cclose.svg" alt="" />
+                          <img onClick={()=>dispatch(removeFromCart(product.id))} className="cursor-pointer w-6 h-6" src="\img\cclose.svg" alt="" />
                       </div>
                       <p className="w-[375px] my-3 bg-[#E6E6E6] h-[1px] "></p>
                   </div>

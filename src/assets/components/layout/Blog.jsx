@@ -32,15 +32,15 @@ export default function Blog(){
                         </div>
                         <div className="flex gap-4 pl-6 pt-6">
                             <div className="flex gap-1 items-center">
-                                <img className="w-[20px] h-[20px]" src="\public\img\tag.svg" alt="" />
+                                <img className="w-[20px] h-[20px]" src="\img\tag.svg" alt="" />
                                 <p className="text-[#4D4D4D]">Food</p>
                             </div>
                             <div className="flex gap-1 items-center">
-                                <img className="w-[20px] h-[20px]" src="\public\img\user1.svg" alt="" />
+                                <img className="w-[20px] h-[20px]" src="\img\user1.svg" alt="" />
                                 <p className="text-[#4D4D4D]">By Admin</p>
                             </div>
                             <div className="flex gap-1 items-center">
-                                <img className="w-[20px] h-[20px]" src="\public\img\chat.svg" alt="" />
+                                <img className="w-[20px] h-[20px]" src="\img\chat.svg" alt="" />
                                 <p className="text-[#4D4D4D]">65 Comments</p>
                             </div>
                         </div>
