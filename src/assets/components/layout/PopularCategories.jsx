@@ -18,7 +18,7 @@ export default function PopularCategories() {
       <div className="w-[400px] sm:w-[1320px] mx-auto mt-[60px]">
         <div className="flex items-center justify-between">
           <p className="text-2xl sm:text-[32px] font-semibold">
-            Popular Categories đang fix vercel
+            Popular Categories
           </p>
           <div className="flex gap-3 justify-center items-center cursor-pointer">
             <p className="text-[#00B207] font-medium">View All</p>
