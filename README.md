@@ -1,15 +1,28 @@
-# React + Vite
+# ShopFood – Website bán rau củ quả trực tuyến
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ShopFood** là một website thương mại điện tử cho phép người dùng mua rau củ quả trực tuyến với giao diện đẹp, responsive và trải nghiệm mượt mà.
 
-Currently, two official plugins are available:
+## 💡 Mục tiêu dự án
+- Xây dựng nền tảng mua sắm trực tuyến cho rau củ quả tươi.  
+- Giúp khách hàng dễ dàng tìm kiếm, chọn sản phẩm, thêm vào giỏ hàng và thanh toán.  
+- Thể hiện kỹ năng **Frontend, State Management và thiết kế UI/UX**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Chức năng chính
+- **Danh mục sản phẩm:** Tìm kiếm, lọc theo loại và giá.  
+- **Giỏ hàng & thanh toán:** Quản lý sản phẩm đã chọn và thanh toán trực tuyến (demo).  
+- **Quản lý người dùng:** Đăng ký, đăng nhập và quản lý thông tin cá nhân.  
+- **Routing:** Điều hướng giữa các trang Home, Shop, Blog, About, Contact với React Router DOM.  
+- **Responsive Design:** Hiển thị tốt trên cả desktop và mobile.  
+- **Thiết kế UI/UX:** Prototype và layout được thiết kế bằng Figma.  
 
-## Expanding the ESLint configuration
+## ⚙ Công nghệ sử dụng
+- **Frontend:** ReactJS, HTML, CSS, JavaScript, Tailwind CSS  
+- **State Management:** Redux Toolkit  
+- **Routing:** React Router DOM  
+- **Thiết kế:** Figma  
+- **Công cụ khác:** Vite, Git  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# shopfood
->>>>>>> 52505b453c46a17624f9384b384abaae95278bc5
+## 🌐 Link dự án
+- **Trang web:** https://shopfood-zeta.vercel.app/
+- **GitHub:** https://github.com/nguyenvu-git/shopfood  
+
