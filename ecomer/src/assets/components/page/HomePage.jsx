@@ -5,7 +5,9 @@ import PopularCategories from "../layout/PopularCategories";
 import PopularProducts from "../layout/PopularProducts";
 import Poster from "../layout/Poster";
 import BestSeller from "../layout/BestSeller";
-
+import Blog from "../layout/Blog";
+import Footer from "./Footer";
+import ViewProduct from "../layout/ViewProduct";
 export default function HomePage() {
   return (
     <>
@@ -16,7 +18,9 @@ export default function HomePage() {
       <PopularProducts></PopularProducts>
       <Poster></Poster>
       <BestSeller></BestSeller>
-      
+      <Blog></Blog>
+      <Footer></Footer>
+      <ViewProduct></ViewProduct>
     </>
   );
 }

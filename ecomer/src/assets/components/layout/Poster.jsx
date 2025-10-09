@@ -9,7 +9,7 @@ export default function Poster() {
           <p className="text-[40px] font-semibold text-white mt-2">
             Sale of the Month
           </p>
-
+          
           <div className="flex gap-2 mt-2 mb-6">
             <div className="">
               <p className="text-[24px] text-white">00</p>

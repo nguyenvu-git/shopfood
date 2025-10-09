@@ -1,8 +1,16 @@
 import { useState } from "react";
 import ButtonAddToCart from "../ButtonAddToCart";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../../redux/cartSlice";
+import { Products } from "../../../../data/product";
 export default function BestSeller() {
+  const dispatch = useDispatch();
+    const handleAddToCart = (product)=>{
+      dispatch(addToCart(product));
+    }
   const Products = [
     {
+      id:1,
       image: "/public/img/pr1.jpg",
       name: "Apple",
       price: "$14.99",
@@ -11,6 +19,7 @@ export default function BestSeller() {
       rate: "/public/img/Star.svg",
     },
     {
+      id:2,
       image: "/public/img/pr2.jpg",
       name: "Fresh Indian Malta",
       price: "$20.00",
@@ -19,6 +28,7 @@ export default function BestSeller() {
       rate: "/public/img/Star.svg",
     },
     {
+      id:3,
       image: "/public/img/pr3.jpg",
       name: "Chinese cabbage",
       price: "$12.00",
@@ -27,6 +37,7 @@ export default function BestSeller() {
       rate: "/public/img/Star.svg",
     },
     {
+      id:4,
       image: "/public/img/pr4.jpg",
       name: "Green Lettuce",
       price: "$9.00",
@@ -35,6 +46,7 @@ export default function BestSeller() {
       rate: "/public/img/Star.svg",
     },
     {
+      id:5,
       image: "/public/img/pr5.jpg",
       name: "Eggplant",
       price: "$34.00",
@@ -123,10 +135,10 @@ export default function BestSeller() {
           Featured Products
         </p>
         <div className="flex flex-wrap justify-between items-center py-8 gap-[20px]">
-          {Products.map((product, index) => (
+          {Products.slice(0,5).map((product, index) => (
             <div
               className="border group cursor-pointer select-none"
-              key={index}
+              key={product.id}
             >
               <img className="w-[230px]" src={product.image} alt="" />
               <p className="px-2 pt-3 text-[#4D4D4D] text-[14px] group-hover:text-[#2C742F]">
@@ -137,7 +149,7 @@ export default function BestSeller() {
                   <p className="font-medium">{product.price}</p>
                   <p className="text-[16px] text-[#999]">{product.priceSell}</p>
                 </div>
-                <div className=" w-[40px] h-[40px] bg-[#F2F2F2] group-hover:bg-[#00B207] rounded-full flex items-center justify-center">
+                <div onClick={()=>handleAddToCart(product)} className=" w-[40px] h-[40px] bg-[#F2F2F2] group-hover:bg-[#00B207] rounded-full flex items-center justify-center">
                   <img
                     className="group-hover:hidden"
                     src={product.cart}
@@ -219,7 +231,7 @@ export default function BestSeller() {
           <img className="" src="/public/img/ps.jpg" alt="" />
         </div>
         {open && dataPr && (
-          <div className="fixed inset-0  backdrop-brightness-50 flex items-center justify-center z-50">
+          <div className="fixed inset-0 flex items-center justify-center z-100 backdrop-brightness-50">
             <div className="bg-white w-[1320px] h-[600px] p-6 rounded-lg relative">
               {/* Nút đóng */}
               <button

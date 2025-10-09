@@ -1,4 +1,6 @@
+import {useSelector} from "react-redux";
 export default function HeaderMobile() {
+  const count = useSelector((state) =>state.cart.totalQuantity);
   return (
     <>
       <header className="sm:hidden py-2  fixed top-0 w-full bg-white">
