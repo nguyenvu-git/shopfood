@@ -21,7 +21,7 @@ export default function PopularCategories() {
             Popular Categories
           </p>
           <div className="flex gap-3 justify-center items-center cursor-pointer">
-            <p className="text-[#00B207] font-medium">View All</p>
+            <p className="text-[#00B207] font-medium">View All mọit thư</p>
             <img
               className="text-sm sm:w-[15px]"
               src="\public\img\Group.svg"
