@@ -44,7 +44,7 @@ export default function ShopPage() {
     <>
       <Header></Header>
       <div className="w-[1320px] mx-auto mt-40">
-        <img src="\public\img\bannersell.jpg" alt="" />
+        <img src="\img\bannersell.jpg" alt="" />
         <div className="flex gap-4 mt-10">
           <select
             id="fruit"
@@ -136,7 +136,7 @@ export default function ShopPage() {
               setChargePage((prev) => (prev > 1 ? prev - 1 : prev))
             }
             className="cursor-pointer"
-            src="\public\img\backk.svg"
+            src="\img\backk.svg"
             alt=""
           />
 
@@ -160,7 +160,7 @@ export default function ShopPage() {
             onClick={() =>
               setChargePage((prev) => (prev < totalPages ? prev + 1 : prev))
             }
-            src="\public\img\nextt.svg"
+            src="\img\nextt.svg"
             alt=""
           />
         </div>

@@ -31,14 +31,14 @@ export default function Header() {
           <div className="hidden w-full max-w-[1200px] mx-auto px-4 py-2 sm:flex flex-wrap  sm:justify-between ">
             <img
               className="flex items-center mb-2 sm:mb-0"
-              src="/public/img/Logo.svg"
+              src="/img/Logo.svg"
               alt=""
             />
             <div className="flex justify-center">
               <form onSubmit={handleSearch} className="flex relative sm:w-[500px]" >
                 <div className="flex relative sm:w-[500px] min-w-[200px] border border-gray-300 rounded-l-xl overflow-hidden focus-within:border-black  sm:mb-0">
                   <img
-                    src="\public\img\iconSearch.svg"
+                    src="\img\iconSearch.svg"
                     alt=""
                     className="absolute top-1/2 left-3 -translate-y-1/2 w-5 h-5"
                   />
@@ -64,7 +64,7 @@ export default function Header() {
                 <div className="bg-[#2C742F] flex justify-center items-center w-[18px] h-[18px] rounded-full text-[10px] font-medium text-white absolute -top-0 -right-0">{count}</div>
                 <img
                   className="w-[34px] h-[34px]"
-                  src="\public\img\Bag.svg"
+                  src="\img\Bag.svg"
                   alt=""
                 />
               </div>
@@ -72,7 +72,7 @@ export default function Header() {
 
             <div className="flex sm:hidden sm:mt-0 ml-4 justify-center items-center">
               <img
-                src="\public\img\Bag.svg"
+                src="\img\Bag.svg"
                 alt="Menu"
                 className="w-6 h-6 items-center justify-center"
               />
@@ -103,7 +103,7 @@ export default function Header() {
               </li>
             </ul>
             <div className="flex items-center gap-2">
-              <img src="/public/img/PhoneCall.svg" alt="" />
+              <img src="/img/PhoneCall.svg" alt="" />
               <p className="text-sm text-white font-medium">0393293422</p>
             </div>
           </div>

@@ -6,7 +6,7 @@ export default function Footer() {
           <div className="flex justify-between">
             <div className="">
               <div className="flex w-[336px]">
-                <img src="\public\img\plant.svg" alt="" />
+                <img src="\img\plant.svg" alt="" />
               </div>
               <p className="text-[#808080] w-[336px] mt-4">
                 Morbi cursus porttitor enim lobortis molestie. Duis gravida
