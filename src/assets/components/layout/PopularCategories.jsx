@@ -24,7 +24,7 @@ export default function PopularCategories() {
             <p className="text-[#00B207] font-medium">View All</p>
             <img
               className="text-sm sm:w-[15px]"
-              src="\public\img\Group.svg"
+              src="\img\Group.svg"
               alt=""
             />
           </div>

@@ -32,14 +32,14 @@ export default function ViewProduct() {
        
         <div className="flex gap-6">
           <div className="flex flex-col items-center gap-14">
-            <img className="w-6 h-6" src="/public/img/up.svg" alt="" />
+            <img className="w-6 h-6" src="/img/up.svg" alt="" />
             <div className="">
-              <img className="" src="/public/img/Productmini.jpg" alt="" />
-              <img className="" src="/public/img/Productmini2.jpg" alt="" />
-              <img className="" src="/public/img/Productmini2.jpg" alt="" />
-              <img className="" src="/public/img/Productmini2.jpg" alt="" />
+              <img className="" src="/img/Productmini.jpg" alt="" />
+              <img className="" src="/img/Productmini2.jpg" alt="" />
+              <img className="" src="/img/Productmini2.jpg" alt="" />
+              <img className="" src="/img/Productmini2.jpg" alt="" />
             </div>
-            <img className="w-6 h-6" src="/public/img/down.svg" alt="" />
+            <img className="w-6 h-6" src="/img/down.svg" alt="" />
           </div>
           <div className="">
             <img
@@ -76,7 +76,7 @@ export default function ViewProduct() {
                 <p className="text-[14px]">Brand:</p>
                 <img
                   className="w-[56px] h-[56px]"
-                  src="/public/img/image.png"
+                  src="/img/image.png"
                   alt=""
                 />
               </div>
@@ -85,22 +85,22 @@ export default function ViewProduct() {
                 <div className="flex gap-6">
                   <img
                     className="w-[18px] h-[18px]"
-                    src="/public/img/fb.svg"
+                    src="/img/fb.svg"
                     alt=""
                   />
                   <img
                     className="w-[18px] h-[18px]"
-                    src="/public/img/tw.svg"
+                    src="/img/tw.svg"
                     alt=""
                   />
                   <img
                     className="w-[18px] h-[18px]"
-                    src="/public/img/pin.svg"
+                    src="/img/pin.svg"
                     alt=""
                   />
                   <img
                     className="w-[18px] h-[18px]"
-                    src="/public/img/ig.svg"
+                    src="/img/ig.svg"
                     alt=""
                   />
                 </div>
@@ -123,7 +123,7 @@ export default function ViewProduct() {
                 >
                   <img
                     className="w-[14px] h-[14px]"
-                    src="/public/img/add.svg"
+                    src="/img/add.svg"
                     alt=""
                   />
                 </div>
@@ -134,7 +134,7 @@ export default function ViewProduct() {
                 >
                   <img
                     className="w-[14px] h-[14px]"
-                    src="/public/img/del.svg"
+                    src="/img/del.svg"
                     alt=""
                   />
                 </div>
