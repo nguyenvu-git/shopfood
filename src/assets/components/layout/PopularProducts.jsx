@@ -24,7 +24,7 @@ export default function PopularProducts() {
             Popular Products
           </p>
           <div className="flex gap-3 justify-center items-center cursor-pointer">
-            <p className="text-[#00B207] font-medium">View All abc</p>
+            <p className="text-[#00B207] font-medium">View All view</p>
             <img className="w-[15px]" src="\img\Group.svg" alt="" />
           </div>
         </div>
