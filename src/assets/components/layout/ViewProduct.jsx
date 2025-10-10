@@ -22,7 +22,7 @@ export default function ViewProduct() {
     setDataPr(product);
   }, [id]);
   if (!dataPr) {
-    return <div className="text-center text-gray-500">Loading...</div>;
+    return;
   }
 
   return (

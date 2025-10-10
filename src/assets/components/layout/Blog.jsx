@@ -22,7 +22,7 @@ export default function Blog(){
             <p className="text-[40px] font-semibold">Latest News</p>
             <div className="flex justify-center gap-6 w-[68,65%] mt-[43px]">
                 {Blogs.map((blog,index)=>(
-                    <div onClick={()=>navtigate("/viewBlog")} className="border-2 w-[32%] rounded-[8px]" key={index}>
+                    <div onClick={()=>navtigate("/viewBlog")} className="border-2 w-[32%] rounded-[8px] cursor-pointer" key={index}>
                         <div className="relative ">
                             <img className="w-full object-cover" src={blog.image} alt="" />
                             <div className="px-[15px] pt-[10px] pb-[6px] absolute bottom-6 left-6 bg-white rounded-xl flex flex-col items-center">

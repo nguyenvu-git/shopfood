@@ -51,21 +51,29 @@ export default function ShopPage() {
             name="fruit"
             className="px-4 py-[10px] border-2 border-[#E6E6E6] rounded-[4px] text-[#4D4D4D] w-[178px]"
           >
-            <option value="apple">Select Category</option>
-            <option value="banana">Chuối</option>
-            <option value="orange">Cam</option>
+            <option value="null">Select Category</option>
+            <option value="FreshFruit">Fresh Fruit</option>
+            <option value="FreshVegetables">Fresh Vegetables</option>
+            <option value="MeatFish">Meat & Fish</option>
+            <option value="Snacks">Snacks</option>
+            <option value="Beverages">Beverages</option>
+            <option value="BreadBakery">Bread & Bakery</option>
+            <option value="BakingNeeds">Baking Needs</option>
+            <option value="Cooking">Cooking</option>
+            <option value="DiabeticFood">Diabetic Food</option>
+            <option value="DishDetergents">Dish Detergents</option>
           </select>
           <select
             id="fruit"
             name="fruit"
             className="px-4 py-[10px] border-2 border-[#E6E6E6] rounded-[4px] text-[#4D4D4D] w-[178px]"
           >
-            <option value="apple">Select Price</option>
-            <option value="banana">$0 - $10</option>
-            <option value="orange">$10 - $20</option>
-            <option value="orange">$20 - $30</option>
-            <option value="orange">$30 - $40</option>
-            <option value="orange">$50 - $60</option>
+            <option value="price">Select Price</option>
+            <option value="price-1">$0 - $10</option>
+            <option value="price-2">$10 - $20</option>
+            <option value="price-3">$20 - $30</option>
+            <option value="price-4">$30 - $40</option>
+            <option value="price-5">$50 - $60</option>
           </select>
           <select
             id="fruit"

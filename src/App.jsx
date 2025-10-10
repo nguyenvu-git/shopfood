@@ -8,15 +8,12 @@ import ViewProduct from "./assets/components/layout/ViewProduct";
 function App() {
   return (
     <>
-
-      
       <Routes>
         <Route path="/" element={<HomePage></HomePage>}/>
         <Route path="/viewBlog" element={<SingleBlock></SingleBlock>}/>
         <Route path="/shop" element={<ShopPage></ShopPage>}></Route>
         <Route path="/product/:id" element={<ViewProduct/>}></Route>
       </Routes>
-      <p></p>
       {/* <ScrollToTop/> */}
     </>
   );
