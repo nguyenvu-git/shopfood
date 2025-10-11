@@ -20,7 +20,7 @@ export default function Header() {
     e.preventDefault();
     if(search.trim() !== ""){
       navigate(`/shop?search=${encodeURIComponent(search)}`);
-      setSearch("");
+      // setSearch("");
     }
   }
   return (

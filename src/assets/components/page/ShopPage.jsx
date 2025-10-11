@@ -22,17 +22,19 @@ export default function ShopPage() {
 
   //search
   const [searchParams] = useSearchParams();
-  const keyword = searchParams.get("search")?.toLowerCase() || "";
+  // const keyword = searchParams.get("search")?.toLowerCase() || "";
+  const keyword = (searchParams.get("search") || "").toLowerCase();
   const [filteredProducts, setFilteredProducts] = useState(Products);
 
   const currentProducts = filteredProducts.slice(
     indexOfFirstProduct,
     indexOfLastProduct
   );
+
   useEffect(() => {
     if (keyword) {
       const results = Products.filter((item) =>
-        item.name.toLowerCase().includes(keyword)
+        item.name.toLowerCase().includes(keyword.toLowerCase())
       );
       setFilteredProducts(results);
     } else {
