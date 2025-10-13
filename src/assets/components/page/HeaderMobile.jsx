@@ -7,7 +7,7 @@ export default function HeaderMobile() {
         <div className="flex justify-between p-4">
           <img src="/img/Logo.svg" alt="" />
           <div className="relative">
-            <p className="bg-[#2C742F] absolute top-[-10] right-0 w-[18px] h-[18px] rounded-full flex justify-center items-center text-[10px] text-white" >{count}</p>
+            <p className="bg-[#2C742F] absolute top-0 right-0 w-[18px] h-[18px] rounded-full flex justify-center items-center text-[10px] text-white" >{count}</p>
             <img src="/img/Bag.svg" alt="" />
           </div>
         </div>
