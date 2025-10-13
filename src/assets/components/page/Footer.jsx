@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
     <>
-      <div className="bg-[#1A1A1A] mt-[80px]">
-        <div className="sm:block hidden w-[1320px] mx-auto pt-[60px] bg-[#1A1A1A]">
-          <div className="flex justify-between">
+      <div className="bg-[#1A1A1A] mt-[80px] min-w-[410px]">
+        <div className="sm:w-[1320px] mx-auto sm:pt-[60px] pt-8 ">
+          <div className="flex sm:justify-between justify-center">
             <div className="">
               <div className="flex w-[336px]">
                 <img src="\img\plant.svg" alt="" />
@@ -22,7 +22,7 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-            <div className="flex text-[14px]">
+            <div className="sm:flex text-[14px] hidden">
               <div className="w-[95px] ">
                  <p className="text-white cursor-pointer mt-3 text-[16px] font-medium">My Account</p>
                  <p className="hover:text-white text-[#999] cursor-pointer mt-5">My Account</p>
@@ -53,7 +53,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="w-[1320px] h-[1px] bg-[#808080] mt-[60px]"></div>
+          <div className="sm:w-[1320px] w-full h-[1px] bg-[#808080] mt-[60px]"></div>
           <div className="">
             <p className="text-[#808080] py-6">Ecobazar eCommerce © 2021. All Rights Reserved</p>
           </div>

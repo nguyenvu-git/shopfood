@@ -3,6 +3,7 @@ import ButtonAddToCart from "../ButtonAddToCart";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../../redux/cartSlice";
 import { Products } from "../../../../data/product";
+import { Link } from "react-router-dom";
 export default function BestSeller() {
   const dispatch = useDispatch();
     const handleAddToCart = (product)=>{
@@ -130,24 +131,24 @@ export default function BestSeller() {
   const decrease = ()=>{(setQuanlity((prev)=>prev>1?prev-1:1))}
   return (
     <>
-      <div className="hidden sm:block sm:w-[1320px] w-full mx-auto pt-[80px]">
+      <div className="sm:w-[1320px] mx-auto sm:pt-[80px] pt-12 w-[400px]">
         <p className="text-[32px] font-semibold block text-center">
           Featured Products
         </p>
-        <div className="flex flex-wrap justify-between items-center py-8 gap-[20px]">
+        <div className="flex flex-wrap sm:justify-between justify-center items-center py-8 sm:gap-[20px] gap-4">
           {Products.slice(0,5).map((product, index) => (
-            <div
+            <Link to={`/product/${product.id}`}
               className="border group cursor-pointer select-none"
               key={product.id}
             >
-              <img className="w-[230px]" src={product.image} alt="" />
+              <img className="sm:w-[230px] w-[150px]" src={product.image} alt="" />
               <p className="px-2 pt-3 text-[#4D4D4D] text-[14px] group-hover:text-[#2C742F]">
                 {product.name}
               </p>
               <div className="flex justify-between px-2 items-center">
                 <div className="flex items-center justify-center gap-1">
-                  <p className="font-medium">{product.price}</p>
-                  <p className="text-[16px] text-[#999]">{product.priceSell}</p>
+                  <p className="font-medium sm:text-[16px] text-[12px]">{product.price}</p>
+                  <p className="sm:text-[16px] text-[12px] text-[#999]">{product.priceSell}</p>
                 </div>
                 <div onClick={()=>handleAddToCart(product)} className=" w-[40px] h-[40px] bg-[#F2F2F2] group-hover:bg-[#00B207] rounded-full flex items-center justify-center">
                   <img
@@ -169,17 +170,17 @@ export default function BestSeller() {
                 <img className="w-[12px]" src={product.rate} alt="" />
                 <img className="w-[12px]" src={product.rate} alt="" />
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
-        <div className="flex justify-between">
+        <div className="sm:flex hidden justify-between">
           <div className="">
             <p className="text-[24px] font-medium mb-[30px]">Hot Deals</p>
-            <div className="grid grid-flow-col grid-rows-3 gap-x-6 gap-y-4">
+            <div className="grid grid-flow-col sm:grid-rows-3 grid-rows-10 gap-x-6 gap-y-4">
               {ProductSells.map((prSell, index) => (
                 <div className="cursor-pointer group" key={index}>
-                  <div className="flex border-1 w-[312px] ">
+                  <div className="flex border-1 sm:w-[312px] w-[230px]">
                     <img
                       className="w-[102px] h-[102px] p-2"
                       src={prSell.img}
@@ -228,7 +229,7 @@ export default function BestSeller() {
               ))}
             </div>
           </div>
-          <img className="" src="/img/ps.jpg" alt="" />
+          <img className="sm:block hidden" src="/img/ps.jpg" alt="" />
         </div>
         {open && dataPr && (
           <div className="fixed inset-0 flex items-center justify-center z-100 backdrop-brightness-50">

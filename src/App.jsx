@@ -14,7 +14,7 @@ function App() {
         <Route path="/shop" element={<ShopPage></ShopPage>}></Route>
         <Route path="/product/:id" element={<ViewProduct/>}></Route>
       </Routes>
-      {/* <ScrollToTop/> */}
+      <ScrollToTop/>
     </>
   );
 }

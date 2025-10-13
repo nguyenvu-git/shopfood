@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../../redux/cartSlice";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 export default function ShopPage() {
   const dispatch = useDispatch();
 
@@ -92,7 +92,7 @@ export default function ShopPage() {
         <div className="">
           <div className="flex flex-wrap justify-center items-center py-8 gap-3 sm:gap-6">
             {currentProducts.map((product, index) => (
-              <div
+              <Link to={`/product/${product.id}`}
                 className="border group cursor-pointer select-none sm:px-[0px] px-3 hover:shadow-[0_0_12px_0_rgba(32,181,38,0.32)]"
                 key={product.id}
               >
@@ -136,7 +136,7 @@ export default function ShopPage() {
                   <img className="w-[12px]" src={product.rate} alt="" />
                   <img className="w-[12px]" src={product.rate} alt="" />
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

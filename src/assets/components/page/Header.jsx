@@ -4,7 +4,7 @@ import CartRight from "../layout/CartRight";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 export default function Header() {
-  const [listCart,setListCart]=useState(false);
+  const [listCart,setListCart] = useState(false);
   const handleClickCart = ()=>{
     setListCart(true)
   }
