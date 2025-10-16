@@ -17,12 +17,12 @@ export default function Blog(){
     const navtigate = useNavigate();
     return<>
 
-        <div className="hidden w-[1320px] mx-auto sm:flex flex-col items-center mt-[80px]">
+        <div className="hidden w-[1320px] mx-auto sm:flex flex-col items-center mt-[90px]">
             <p className="uppercase text-[#00B207]">Blog</p>
             <p className="text-[40px] font-semibold">Latest News</p>
             <div className="flex justify-center gap-6 w-[68,65%] mt-[43px]">
                 {Blogs.map((blog,index)=>(
-                    <div onClick={()=>navtigate("/viewBlog")} className="border-2 w-[32%] rounded-[8px] cursor-pointer" key={index}>
+                    <div onClick={()=>navtigate("/viewBlog")} className="border-2 w-[32%] rounded-[8px] cursor-pointer group" key={index}>
                         <div className="relative ">
                             <img className="w-full object-cover" src={blog.image} alt="" />
                             <div className="px-[15px] pt-[10px] pb-[6px] absolute bottom-6 left-6 bg-white rounded-xl flex flex-col items-center">
@@ -44,7 +44,7 @@ export default function Blog(){
                                 <p className="text-[#4D4D4D]">65 Comments</p>
                             </div>
                         </div>
-                        <p className="w-[376px] pl-6 pt-2 text-[18px] font-medium text-[#2C742F] pb-6">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
+                        <p className="w-[376px] pl-6 pt-2 text-[18px] font-medium group-hover:text-[#2C742F] pb-6">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
                     </div>
                 ))}
             </div>

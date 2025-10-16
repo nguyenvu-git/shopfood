@@ -5,7 +5,7 @@ export default function SingleBlock() {
   return (
     <>
       <Header></Header>
-      <div className="w-[1320px] mx-auto flex gap-[48px] mt-40">
+      <div className="w-[1320px] mx-auto flex gap-[48px] mt-60">
         <div className="w-[872px]">
           <img src="\img\blog1.jpg" alt="" />
           <div className="flex gap-4 pt-8">

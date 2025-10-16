@@ -18,7 +18,7 @@ export default function CartRight({onClose}) {
           <button onClick={onClose} className=" text-black text-2xl">✕</button>
         </div>
       <div className="overflow-y-auto">
-          <div className=" h-[500px] pr-10">
+          <div className=" h-[550px] pr-10">
               {items.map((product,index)=>(
                   <div className=" w-[376px] h-[100px]" key={product.id}>
                       <div className="flex justify-between mt-6 items-center">
@@ -46,7 +46,7 @@ export default function CartRight({onClose}) {
               </div>
               <div className="flex flex-col justify-center">
                 <Link to={"/shoppingCart"} className="flex justify-center bg-[#00B207] w-[376px] px-10 py-4 rounded-[40px] text-white font-semibold mt-6 cursor-pointer">Go to cart</Link>
-                <button className="w-[376px] px-10 py-4 bg-[#56AC591A] rounded-[40px] text-[#00B207] font-semibold mt-3">Go to cart</button>
+                {/* <button className="w-[376px] px-10 py-4 bg-[#56AC591A] rounded-[40px] text-[#00B207] font-semibold mt-3">Go to cart</button> */}
               </div>
             </div>
       </div>
