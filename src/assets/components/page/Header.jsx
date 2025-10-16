@@ -36,7 +36,7 @@ export default function Header() {
          <div className="flex justify-center items-center">
             <Link to={"/signin"} className="text-[12px] text-[#B3B3B3]">Sign In</Link>
             <p className="text-[12px] text-[#B3B3B3] px-1">/</p>
-            <p className="text-[12px] text-[#B3B3B3]">Sign Up</p>
+            <Link to={"/signup"} className="text-[12px] text-[#B3B3B3]">Sign Up</Link>
          </div>
         </div>
         <div className="bg-white py-2">
@@ -119,9 +119,9 @@ export default function Header() {
                   Shop
                 </NavLink>
               </li>
-              <li className="p-5 text-sm font-semibold hover:text-white text-[#999]">
+              {/* <li className="p-5 text-sm font-semibold hover:text-white text-[#999]">
                 <a href="">Pages</a>
-              </li>
+              </li> */}
               <li className="p-5 text-sm font-semibold hover:text-white text-[#999]">
                 <NavLink
                   to="/Blog"

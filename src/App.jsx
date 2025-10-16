@@ -6,6 +6,8 @@ import ScrollToTop from "./assets/components/ScrollToTop";
 import ShopPage from "./assets/components/page/ShopPage";
 import ViewProduct from "./assets/components/layout/ViewProduct";
 import SignIn from "./assets/components/page/SignIn";
+import SignUp from "./assets/components/page/SignUp";
+import ShoppingCart from "./assets/components/layout/ShoppingCart";
 function App() {
   return (
     <>
@@ -15,6 +17,8 @@ function App() {
         <Route path="/shop" element={<ShopPage></ShopPage>}></Route>
         <Route path="/product/:id" element={<ViewProduct/>}></Route>
         <Route path="/signin" element={<SignIn/>}></Route>
+        <Route path="/signup" element={<SignUp/>}></Route>
+        <Route path="/shoppingCart" element={<ShoppingCart></ShoppingCart>}></Route>
       </Routes>
       <ScrollToTop/>
     </>
