@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <>
-      <div className="bg-[#1A1A1A] mt-[80px] min-w-[410px]">
-        <div className="sm:w-[1320px] mx-auto sm:pt-[60px] pt-8 ">
+      <div className="bg-[#1A1A1A] mt-[80px] min-w-[410px] ">
+        <div className="sm:w-[1320px] mx-auto sm:pt-[60px] pt-8 bg-[#1A1A1A] ">
           <div className="flex sm:justify-between justify-center">
             <div className="">
               <div className="flex w-[336px]">

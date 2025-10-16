@@ -7,7 +7,7 @@ export default function Banner(){
     ]
     return<>
         <div className="sm:w-[1320px] mx-auto w-[400px]">
-            <div className="sm:pt-[200px] flex flex-col sm:flex-row pt-[160px] justify-center items-center">
+            <div className="sm:pt-[250px] flex flex-col sm:flex-row pt-[160px] justify-center items-center">
                 <div className="bg-[url('/img/BannarBig.jpg')] w-[387px]  h-[228px] sm:w-[872px] sm:h-[600px] bg-cover rounded-xl bg-center"></div>
                  <div className="ml-6">
                     <div className="hidden sm:block bg-[url('/img/Bannar.jpg')] w-[423px] h-[288px]"></div>

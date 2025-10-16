@@ -1,16 +1,26 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { Products } from "../../../../data/product";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../../redux/cartSlice";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function ShopPage() {
   const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.cart.items);
 
   const handleAddToCart = (product) => {
+    const isDuplicate = cartItems.some((item) => item.id === product.id);
+    if (isDuplicate) {
+      toast.warning("This product is already in your cart !");
+      return;
+    }
+
     dispatch(addToCart(product));
+    toast.success("Added to cart !");
   };
   //thay trang
   const [changrePage, setChargePage] = useState(1);
@@ -45,7 +55,7 @@ export default function ShopPage() {
   return (
     <>
       <Header></Header>
-      <div className="w-[1320px] mx-auto mt-40">
+      <div className="w-[1320px] mx-auto mt-70">
         <img src="\img\bannersell.jpg" alt="" />
         <div className="flex gap-4 mt-10">
           <select
@@ -92,7 +102,8 @@ export default function ShopPage() {
         <div className="">
           <div className="flex flex-wrap justify-center items-center py-8 gap-3 sm:gap-6">
             {currentProducts.map((product, index) => (
-              <Link to={`/product/${product.id}`}
+              <Link
+                to={`/product/${product.id}`}
                 className="border group cursor-pointer select-none sm:px-[0px] px-3 hover:shadow-[0_0_12px_0_rgba(32,181,38,0.32)]"
                 key={product.id}
               >
@@ -114,7 +125,10 @@ export default function ShopPage() {
                     </p>
                   </div>
                   <div
-                    onClick={() => handleAddToCart(product)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleAddToCart(product);
+                    }}
                     className=" w-[40px] h-[40px] bg-[#F2F2F2] group-hover:bg-[#00B207] rounded-full flex items-center justify-center "
                   >
                     <img
@@ -176,6 +190,15 @@ export default function ShopPage() {
         </div>
       </div>
       <Footer></Footer>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        pauseOnHover
+        theme="light"
+      />
     </>
   );
 }

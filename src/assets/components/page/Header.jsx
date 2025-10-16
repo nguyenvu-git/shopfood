@@ -1,41 +1,56 @@
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 import { useState } from "react";
 import CartRight from "../layout/CartRight";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 export default function Header() {
-  const [listCart,setListCart] = useState(false);
-  const handleClickCart = ()=>{
-    setListCart(true)
-  }
-  const handleCloseCart = ()=>{
-    setListCart(false)
-  }
-  const count = useSelector((state) =>state.cart.totalQuantity);
+  const [listCart, setListCart] = useState(false);
+  const handleClickCart = () => {
+    setListCart(true);
+  };
+  const handleCloseCart = () => {
+    setListCart(false);
+  };
+  const count = useSelector((state) => state.cart.totalQuantity);
 
   //search
-  const [search,setSearch]= useState("");
+  const [search, setSearch] = useState("");
   const navigate = useNavigate();
-  const handleSearch=(e)=>{
+  const handleSearch = (e) => {
     e.preventDefault();
-    if(search.trim() !== ""){
+    if (search.trim() !== "") {
       navigate(`/shop?search=${encodeURIComponent(search)}`);
       // setSearch("");
     }
-  }
+  };
   return (
     <>
-    {listCart&&<CartRight onClose={()=>handleCloseCart()}/>}
-      <header className=" fixed top-0 left-0 w-full z-90">
+      {listCart && <CartRight onClose={() => handleCloseCart()} />}
+      <header className=" fixed top-0 left-0 w-full z-90 select-none">
+        <div className="w-full bg-[#333] flex py-[13px] justify-between px-[180px]">
+          <div className="flex justify-center items-center">
+            <img src="\img\map.svg" alt="" />
+            <p className="ml-2 text-[12px] text-[#B3B3B3]">Store Location: Thuan Thanh, Bac Ninh, Viet Nam</p>
+          </div>
+         <div className="flex justify-center items-center">
+            <Link to={"/signin"} className="text-[12px] text-[#B3B3B3]">Sign In</Link>
+            <p className="text-[12px] text-[#B3B3B3] px-1">/</p>
+            <p className="text-[12px] text-[#B3B3B3]">Sign Up</p>
+         </div>
+        </div>
         <div className="bg-white py-2">
-          <div className="hidden w-full max-w-[1200px] mx-auto px-4 py-2 sm:flex flex-wrap  sm:justify-between ">
+          <div className="hidden w-full max-w-[1200px] mx-auto px-4 py-6 sm:flex flex-wrap  sm:justify-between ">
             <img
               className="flex items-center mb-2 sm:mb-0"
               src="/img/Logo.svg"
               alt=""
             />
             <div className="flex justify-center">
-              <form onSubmit={handleSearch} className="flex relative sm:w-[500px]" >
+              <form
+                onSubmit={handleSearch}
+                className="flex relative sm:w-[500px]"
+              >
                 <div className="flex relative sm:w-[500px] min-w-[200px] border border-gray-300 rounded-l-xl overflow-hidden focus-within:border-black  sm:mb-0">
                   <img
                     src="\img\iconSearch.svg"
@@ -43,8 +58,8 @@ export default function Header() {
                     className="absolute top-1/2 left-3 -translate-y-1/2 w-5 h-5"
                   />
                   <input
-                  value={search}
-                  onChange={(e)=> setSearch(e.target.value)}
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
                     className="w-full pl-10 pr-4 py-2 text-sm sm:text-base outline-none"
                     type="search"
                     placeholder="Search"
@@ -60,13 +75,14 @@ export default function Header() {
             </div>
             <div className="hidden sm:flex divide-x  ">
               {/* <img src="\public\img\Heart.svg" alt="" /> */}
-              <div onClick={()=>handleClickCart()} className="relative select-none ">
-                <div className="bg-[#2C742F] flex justify-center items-center w-[18px] h-[18px] rounded-full text-[10px] font-medium text-white absolute -top-0 -right-0">{count}</div>
-                <img
-                  className="w-[34px] h-[34px]"
-                  src="\img\Bag.svg"
-                  alt=""
-                />
+              <div
+                onClick={() => handleClickCart()}
+                className="relative select-none "
+              >
+                <div className="bg-[#2C742F] flex justify-center items-center w-[18px] h-[18px] rounded-full text-[10px] font-medium text-white absolute -top-0 -right-0">
+                  {count}
+                </div>
+                <img className="w-[34px] h-[34px]" src="\img\Bag.svg" alt="" />
               </div>
             </div>
 
@@ -84,16 +100,37 @@ export default function Header() {
           <div className="hidden max-w-[1200px] sm:flex mx-auto items-center sm:justify-between ">
             <ul className="flex items-center">
               <li className="p-5 text-sm font-semibold hover:text-white text-[#999] ">
-                <NavLink to="/" className={({isActive})=> isActive?"text-white":"text-[#999]"}>Home</NavLink>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? "text-white" : "text-[#999]"
+                  }
+                >
+                  Home
+                </NavLink>
               </li>
               <li className="p-5 text-sm font-semibold hover:text-white text-[#999]">
-                <NavLink to="/shop" className={({isActive})=> isActive?"text-white":"text-[#999]"}>Shop</NavLink>
+                <NavLink
+                  to="/shop"
+                  className={({ isActive }) =>
+                    isActive ? "text-white" : "text-[#999]"
+                  }
+                >
+                  Shop
+                </NavLink>
               </li>
               <li className="p-5 text-sm font-semibold hover:text-white text-[#999]">
                 <a href="">Pages</a>
               </li>
               <li className="p-5 text-sm font-semibold hover:text-white text-[#999]">
-                <NavLink to="/Blog" className={({isActive})=> isActive?"text-white":"text-[#999]"}>Blog</NavLink>
+                <NavLink
+                  to="/Blog"
+                  className={({ isActive }) =>
+                    isActive ? "text-white" : "text-[#999]"
+                  }
+                >
+                  Blog
+                </NavLink>
               </li>
               <li className="p-5 text-sm font-semibold hover:text-white text-[#999]">
                 <a href="">About Us</a>

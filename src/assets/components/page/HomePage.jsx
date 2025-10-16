@@ -8,6 +8,7 @@ import BestSeller from "../layout/BestSeller";
 import Blog from "../layout/Blog";
 import Footer from "./Footer";
 import ViewProduct from "../layout/ViewProduct";
+import SignIn from "./SignIn";
 export default function HomePage() {
   return (
     <>

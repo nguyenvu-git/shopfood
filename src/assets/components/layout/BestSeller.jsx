@@ -1,17 +1,27 @@
 import { useState } from "react";
 import ButtonAddToCart from "../ButtonAddToCart";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../../redux/cartSlice";
 import { Products } from "../../../../data/product";
 import { Link } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function BestSeller() {
   const dispatch = useDispatch();
-    const handleAddToCart = (product)=>{
-      dispatch(addToCart(product));
+  const cartItems = useSelector((state) => state.cart.items);
+  const handleAddToCart = (product) => {
+    const isDuplicate = cartItems.some((item) => item.id === product.id);
+    if (isDuplicate) {
+      toast.warning("This product is already in your cart !");
+      return;
     }
+
+    dispatch(addToCart(product));
+    toast.success("Added to cart !");
+  };
   const Products = [
     {
-      id:1,
+      id: 1,
       image: "/img/pr1.jpg",
       name: "Apple",
       price: "$14.99",
@@ -20,7 +30,7 @@ export default function BestSeller() {
       rate: "/img/Star.svg",
     },
     {
-      id:2,
+      id: 2,
       image: "/img/pr2.jpg",
       name: "Fresh Indian Malta",
       price: "$20.00",
@@ -29,7 +39,7 @@ export default function BestSeller() {
       rate: "/img/Star.svg",
     },
     {
-      id:3,
+      id: 3,
       image: "/img/pr3.jpg",
       name: "Chinese cabbage",
       price: "$12.00",
@@ -38,7 +48,7 @@ export default function BestSeller() {
       rate: "/img/Star.svg",
     },
     {
-      id:4,
+      id: 4,
       image: "/img/pr4.jpg",
       name: "Green Lettuce",
       price: "$9.00",
@@ -47,7 +57,7 @@ export default function BestSeller() {
       rate: "/img/Star.svg",
     },
     {
-      id:5,
+      id: 5,
       image: "/img/pr5.jpg",
       name: "Eggplant",
       price: "$34.00",
@@ -126,9 +136,13 @@ export default function BestSeller() {
     setOpen(false);
   };
 
-  const [quanlity,setQuanlity] = useState(1);
-  const increase = ()=>{(setQuanlity((prev)=>prev+1))}
-  const decrease = ()=>{(setQuanlity((prev)=>prev>1?prev-1:1))}
+  const [quanlity, setQuanlity] = useState(1);
+  const increase = () => {
+    setQuanlity((prev) => prev + 1);
+  };
+  const decrease = () => {
+    setQuanlity((prev) => (prev > 1 ? prev - 1 : 1));
+  };
   return (
     <>
       <div className="sm:w-[1320px] mx-auto sm:pt-[80px] pt-12 w-[400px]">
@@ -136,21 +150,36 @@ export default function BestSeller() {
           Featured Products
         </p>
         <div className="flex flex-wrap sm:justify-between justify-center items-center py-8 sm:gap-[20px] gap-4">
-          {Products.slice(0,5).map((product, index) => (
-            <Link to={`/product/${product.id}`}
+          {Products.slice(0, 5).map((product, index) => (
+            <Link
+              to={`/product/${product.id}`}
               className="border group cursor-pointer select-none"
               key={product.id}
             >
-              <img className="sm:w-[230px] w-[150px]" src={product.image} alt="" />
+              <img
+                className="sm:w-[230px] w-[150px]"
+                src={product.image}
+                alt=""
+              />
               <p className="px-2 pt-3 text-[#4D4D4D] text-[14px] group-hover:text-[#2C742F]">
                 {product.name}
               </p>
               <div className="flex justify-between px-2 items-center">
                 <div className="flex items-center justify-center gap-1">
-                  <p className="font-medium sm:text-[16px] text-[12px]">{product.price}</p>
-                  <p className="sm:text-[16px] text-[12px] text-[#999]">{product.priceSell}</p>
+                  <p className="font-medium sm:text-[16px] text-[12px]">
+                    {product.price}
+                  </p>
+                  <p className="sm:text-[16px] text-[12px] text-[#999]">
+                    {product.priceSell}
+                  </p>
                 </div>
-                <div onClick={()=>handleAddToCart(product)} className=" w-[40px] h-[40px] bg-[#F2F2F2] group-hover:bg-[#00B207] rounded-full flex items-center justify-center">
+                <div
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleAddToCart(product);
+                  }}
+                  className=" w-[40px] h-[40px] bg-[#F2F2F2] group-hover:bg-[#00B207] rounded-full flex items-center justify-center"
+                >
                   <img
                     className="group-hover:hidden"
                     src={product.cart}
@@ -248,32 +277,12 @@ export default function BestSeller() {
                   <div className="flex flex-col items-center gap-14">
                     <img className="w-6 h-6" src="/img/up.svg" alt="" />
                     <div className="">
-                      <img
-                        className=""
-                        src="/img/Productmini.jpg"
-                        alt=""
-                      />
-                      <img
-                        className=""
-                        src="/img/Productmini2.jpg"
-                        alt=""
-                      />
-                      <img
-                        className=""
-                        src="/img/Productmini2.jpg"
-                        alt=""
-                      />
-                      <img
-                        className=""
-                        src="/img/Productmini2.jpg"
-                        alt=""
-                      />
+                      <img className="" src="/img/Productmini.jpg" alt="" />
+                      <img className="" src="/img/Productmini2.jpg" alt="" />
+                      <img className="" src="/img/Productmini2.jpg" alt="" />
+                      <img className="" src="/img/Productmini2.jpg" alt="" />
                     </div>
-                    <img
-                      className="w-6 h-6"
-                      src="/img/down.svg"
-                      alt=""
-                    />
+                    <img className="w-6 h-6" src="/img/down.svg" alt="" />
                   </div>
                   <div className="">
                     <img
@@ -373,7 +382,10 @@ export default function BestSeller() {
 
                     <div className="flex justify-between mt-[18px] select-none">
                       <div className="flex gap-2 border-2 rounded-4xl w-[124px] justify-between p-2 items-center">
-                        <div className="bg-[#F2F2F2] rounded-full p-[10px] flex items-center justify-center " onClick={increase}>
+                        <div
+                          className="bg-[#F2F2F2] rounded-full p-[10px] flex items-center justify-center "
+                          onClick={increase}
+                        >
                           <img
                             className="w-[14px] h-[14px]"
                             src="/img/add.svg"
@@ -381,7 +393,10 @@ export default function BestSeller() {
                           />
                         </div>
                         <p>{quanlity}</p>
-                        <div className="bg-[#F2F2F2] rounded-full p-[10px] flex items-center justify-center "onClick={decrease}>
+                        <div
+                          className="bg-[#F2F2F2] rounded-full p-[10px] flex items-center justify-center "
+                          onClick={decrease}
+                        >
                           <img
                             className="w-[14px] h-[14px]"
                             src="/img/del.svg"
@@ -398,6 +413,15 @@ export default function BestSeller() {
           </div>
         )}
       </div>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        pauseOnHover
+        theme="light"
+      />
     </>
   );
 }
